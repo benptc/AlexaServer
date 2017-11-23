@@ -1,3 +1,6 @@
 [submodule "apps/AlexaSkill"]
 	path = apps/AlexaSkill
 	url = https://github.com/benptc/AlexaSkill.git
+[submodule "apps/RealityEditorSkill"]
+	path = apps/RealityEditorSkill
+	url = https://github.com/benptc/RealityEditorSkill.git
