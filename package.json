@@ -4,8 +4,7 @@
   "description": "Simple server to handle Alexa skills.",
   "main": "server.js",
   "dependencies": {
-    "alexa-app-server": "^3.0.1",
-    "socket.io": "^2.0.4"
+    "alexa-app-server": "^3.0.1"
   },
   "devDependencies": {},
   "scripts": {
