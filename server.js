@@ -8,4 +8,5 @@ var server = new AlexaAppServer( {
 } );
 
 server.start();
-server.express.use('/test', function(req, res) { res.send("OK"); });
+
+server.express.use('/test', function(req, res) { res.send(JSON.stringify(global.state)); });
