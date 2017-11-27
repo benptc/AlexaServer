@@ -4,7 +4,14 @@ CMD=$1
 
 function skill {
     (cd /apps/RealityEditorSkill; git add .; git commit -m 'updates via deploy script'; git push origin master)
-} 
+}
+
+function server {
+    git add .;
+    git commit -m 'updates via deploy script';
+    git push origin master;
+    git push heroku master;
+}
 
 function usage {
     echo "Usage: $(basename $0) COMMAND
