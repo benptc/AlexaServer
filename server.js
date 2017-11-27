@@ -13,11 +13,12 @@ server.express.use('/test', function(req, res) { res.send(JSON.stringify(global.
 
 // var express = require('express')();
 var http = require('http').Server(server.express);
+var io = require('socket.io')(http);
 
 io.on('connection', function(socket){
     console.log('a user connected');
 });
-
-http.listen(3000, function(){
-    console.log('listening on *:3000');
-});
+//
+// http.listen(3000, function(){
+//     console.log('listening on *:3000');
+// });
