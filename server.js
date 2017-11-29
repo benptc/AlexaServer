@@ -10,12 +10,12 @@ var server = new AlexaAppServer( {
 server.start();
 
 server.express.use('/getState', function(req, res) {
-    res.send(JSON.stringify(globalStates.state));
+    res.send(JSON.stringify(global.state));
 });
 
 server.express.use('/getNewActions', function(req, res) {
-    res.send(JSON.stringify(globalStates.actionQueue));
-    globalStates.actionQueue = [];
+    res.send(JSON.stringify(global.actionQueue));
+    global.actionQueue = [];
 });
 
 // global.lastSentState = null;
